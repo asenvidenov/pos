@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using GuerrillaNtp;
@@ -46,7 +43,7 @@ namespace pos
                 _PosPrinter = value;
             }
         }
-        public static int execute_070_info_Get_CashIn_CashOut(  //
+        public static int Execute_070_info_Get_CashIn_CashOut(  //
         CFD_BGR myFP,                          //
         ref string ErrorCode,                  //
         ref string CashSum,                    //
@@ -75,7 +72,7 @@ namespace pos
                 return myFP.lastError_Code;
             }
 
-            public static int execute_070_receipt_CashIn_CashOut(  //
+            public static int Execute_070_receipt_CashIn_CashOut(  //
                CFD_BGR myFP,                         //
                string Amount,                        //
                ref string ErrorCode
@@ -104,7 +101,7 @@ namespace pos
                 return result;
             }
 
-        public static int execute_060_receipt_Fiscal_Cancel(CFD_BGR myFP)
+        public static int Execute_060_receipt_Fiscal_Cancel(CFD_BGR myFP)
         {
             const string cmd = "060_receipt_Fiscal_Cancel";
             int result = -1;
